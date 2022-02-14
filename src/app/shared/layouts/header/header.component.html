@@ -1,0 +1,119 @@
+<header>
+		<div class="header__body">		
+            
+            <div class="header__logo">
+                <span>T</span>ILE.EXPERT	
+                <img src="../../../assets/img/Cursor_logo.png">
+            </div>
+
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="index.html" class="header__link">Ссылки</a></li>
+                    <img class= "arrow" src ="../../../assets/img/Shape_triangle.png">
+                
+                </ul>
+                <ul class="header__list">
+                    <li><a href="about_us.html" class="header__link">Контакты</a></li>
+                </ul>
+                <ul class="header__list">
+                    <li><a href="serviсes.html" class="header__link">Теги</a></li>
+                    <img class= "arrow" src ="../../../assets/img/Shape_triangle.png">
+                </ul>
+                <ul class="header__list">
+                    <li><a href="projects.html" class="header__link">Просьбы</a></li>
+                    <img class= "arrow" src ="../../../assets/img/Shape_triangle.png">
+                </ul>
+                
+                <ul class="header__list">
+                    <li><a href="documents.html" class="header__link">Избранное</a></li>
+                    <img class= "arrow" src ="../../../assets/img/Shape_triangle.png">
+                </ul>
+
+                <ul class="header__list">
+                    <li><a href="partners.html" class="header__link">Посещения</a></li>
+                    <img class= "arrow" src ="../../../assets/img/Shape_triangle.png">
+                </ul>
+                
+                <div class="header__search">
+                    <img src ="../../../assets/img/search.png" (click)="searchOn()">
+                </div>
+                
+                <div class="search" >
+                    
+                    <!--для настройки работы формы <form [formGroup]="form">  -->
+                    <form>
+                        <ng-template [ngIf]="searchRow">
+                        <div class="search__row">
+                            <img  class="search__img" src ="../../../assets/img/search_grey.png">
+                            <input class="form-control" type="text" id="search" name="search" formControlName="search"(click)="formOn()">
+                            <button class="search__img" class="search__cancel"><img src ="../../../assets/img/close.png"></button>
+                            <button type ="submit" class="search__btn">НАЙТИ</button>
+                        </div>
+                        </ng-template>
+                        <ng-template [ngIf]="searchForm">
+                            <div class="search__form">
+                                <div class = "form__firstrow">
+                                    <div class="form-group">
+                                        <input type="checkbox" class="form-control checkbox form__my" name="my" formControlName="my"/>
+                                        <label class="description">мои</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form__author" name="author" formControlName="author" placeholder=" Автор"/>
+                                    </div>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label class="description">Сортировать по:</label>
+                                    <select #description class="form-control form__sort" name="sort" formControlName="sort">
+                                        <option value="date">по дате</option>
+                                    </select>
+                                </div>
+                                <div class="form-group checkbox-group" >
+                                    
+                                    <input type="checkbox" class="form-control checkbox" name="member" formControlName="member"/>
+                                    <label class="description">я участник</label>
+                    
+                                    <input type="checkbox" class="form-control checkbox form__title" name="title" formControlName="title"/>
+                                    <label class="description">в заголовке</label>
+                    
+                                    <input type="checkbox"  class="form-control checkbox form__strict" name="strict" formControlName="strict"/>
+                                    <label class="description">строгий список</label>
+                                </div>
+                                
+                            </div>
+                            </ng-template>
+                    </form>
+                    
+                    
+                </div>
+            
+            </nav>
+            
+            <div class="header__add">
+                <img src ="../../../assets/img/add.png">
+            </div>
+
+            <div class="header__user" (click)="searchOff()">
+                <div class="user__mail">
+                    <img src ="../../../assets/img/mail.png">
+                </div>
+                <div class="user__notifications">
+                    <img src ="../../../assets/img/notifications.png">
+                    <div class="notifications__number">18</div>
+                </div>
+                <div class="user__photo">
+                    <img src ="../../../assets/img/photo.png">
+                </div>
+                
+            </div>
+            
+        </div>
+	
+      
+        
+    
+
+
+</header>
+
+

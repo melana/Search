@@ -1,0 +1,300 @@
+.header {
+    &__body {
+        display: flex;
+        width: 100%;
+        height: 56px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        background-color: #4876c3;
+        font-family: 'Roboto';
+        flex-wrap: wrap;
+    }
+
+    &__logo{
+        /* Style for "Tile.Exper" */
+        width: 192px;
+        height: 20px;
+        color: #ffffff;
+        font-family: "Esqadero FF CY 4F";
+        font-size: 26px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-transform: uppercase;  
+        margin: 19px 119px 17px 20px; 
+        position: relative;
+    }
+
+    &__logo span{
+    /* Text style for "T" */
+        color: #db4437;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    &__logo img{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 20px;
+        left: 179px;
+    }
+
+    &__menu {
+        display: flex;
+        position: relative;
+        padding-left: 0;
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        height: 13px;
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 21px;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    &__list li{
+        list-style: none;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    &__search{
+        width: 18px;
+        height: 18px;
+        padding-top: 20px;
+        padding-left:45px;
+        padding-right: 11px;
+    }
+
+    &__add{
+        width: 20px;
+        height: 20px;
+        padding-top: 18px;
+        padding-left: 20px;
+    }
+
+    &__user {
+        display: flex;
+        flex-grow:1;
+        justify-content: flex-end;
+        
+    }
+
+}
+
+.user{
+    &__mail{
+        width: 20px;
+        height: 16px;
+        padding-top: 19px;
+    }
+
+    &__notifications {
+        position: relative;
+    }
+    &__notifications img{
+        width: 16px;
+        height: 20px;
+        padding-left: 27px;
+        padding-top: 18px;
+    }
+    &__photo{
+        width: 32px;
+        height: 32px;
+        padding-top: 12px;
+        padding-right: 29px;
+        padding-left: 22px;
+    }
+    
+}
+
+.notifications{
+    &__number{
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: #db4437;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-transform: uppercase;
+        top: 13px;
+        left: 36px;
+
+
+    }
+}
+
+.arrow {
+    width: 11px;
+    height: 6px; 
+    padding-left: 11px;
+    padding-top: 6px;
+}
+
+.search{
+    
+    &__row{
+        position: absolute;
+        display: flex;
+        width: 725px;
+        transition: width 2s;
+        height: 40px;
+        border: solid 1px #ffffff;; 
+        border-radius: 2px;
+        background-color:#ffffff;
+        left: 0px;
+        top: 8px;
+        margin-left: 20px;
+        animation-name: in;
+        animation-duration: 3s;
+    
+        float: right;
+        
+    }
+
+    &__row input{
+        width: 100%;
+        border: none ; 
+    }
+
+    &__row input:focus{
+        outline: none;
+    }
+
+    &__img{
+        padding: 12px 10px 10px 10px ;
+    }
+
+    &__cancel{
+        border: none;
+        background-color:#ffffff;
+        padding-top: 6px;
+        padding-right: 9px;
+    }
+
+    &__btn{
+        position:absolute;
+        width: 70px;
+        height: 42px;
+        background-color: #ffc120;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 40px;
+        text-align: center;
+        border: solid #ffc120 1px;
+        border-radius: 0% 5% 5% 0%;
+        right: -70px;
+        bottom: -1px ;
+    }
+
+    &__form{
+       position: absolute;
+        width: 422px;
+        height: 162px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
+        padding-left: 20px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 40px;
+        text-align: left;
+        top: 53px;
+        left: 20px
+    }
+}
+.checkbox{
+    width: 18px;
+    height: 18px; 
+    margin-top: 11px; 
+}
+
+input:checked{
+    background-color:#8fc04f;
+}
+
+.form{
+    position:absolute;
+    margin: 300px;
+    &__firstrow{
+        display: flex;
+    }
+
+    &__author{
+        width: 313px;
+        height: 37px;
+        border: 1px solid #c4ced5;
+        margin-top: 17px;
+        margin-right: 19px;
+        margin-left: 30px;
+        
+    }
+
+    &__sort{
+        width: 144px;
+        height: 38px;
+        border: 1px solid #dadada;
+        background-color: #f2f2f2;
+       
+        margin-top: 13px;
+        margin-left: 27px;
+       
+    }
+    &__my{
+        margin-top: 26px; 
+        margin-right: 9px; 
+    }
+     
+    &__title{
+        margin-left: 30px;
+
+    }
+
+    &__strict{
+        margin-left: 30px;
+        
+    }
+}
+.label{
+    
+}
+
+.checkbox-group {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 5px; 
+  }
+
+  @keyframes in {
+    0%   {width:0%; margin-left: 745px;}
+    100% {width:725px; margin-left: 20px;}
+  }
